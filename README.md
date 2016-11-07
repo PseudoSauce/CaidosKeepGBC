@@ -12,7 +12,7 @@ The steps below will take you through cloning your own private fork, then compil
 
 ### Windows
 
-1. Install **[Git Bash](https://git-scm.com/downloads)** and **[Git LFS](https://git-lfs.github.com/)** then fork and clone our repository.
+1. Install **[Git Bash](https://git-scm.com/downloads)**.
 
 1. Install **Visual Studio 2015**. 
    All desktop editions of Visual Studio 2015 can build UE4, including [Visual Studio Community 2015](http://www.visualstudio.com/products/visual-studio-community-vs).
@@ -45,6 +45,7 @@ CaidosKeepGBC is under [Apache 2 License](http://www.apache.org/licenses/LICENSE
 Additional Notes
 ----------------
 
-It might take you several pulls to fully download the whole project even with LFS. And vice-versa for pushing. 
-This shouldn't happen that often as long as your repository is up-to-date.
+You must unzip all folders inside Content to get all .uasset and .umap from the project. Also, you must zip them back up to commit.
+
+Initially, we used Git LFS to track these files but since this is just a school project we didn't want to bother paying for additional storage capacity. Instead, we are using Perforce for our daily usage and will just upload to GitHub after each milestones reached.
 
